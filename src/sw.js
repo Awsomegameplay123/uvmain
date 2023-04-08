@@ -1,14 +1,1 @@
-/*global UVServiceWorker,__uv$config*/
-/*
- * Stock service worker script.
- * Users can provide their own sw.js if they need to extend the functionality of the service worker.
- * Ideally, this will be registered under the scope in uv.config.js so it will not need to be modified.
- * However, if a user changes the location of uv.bundle.js/uv.config.js or sw.js is not relative to them, they will need to modify this script locally.
- */
-importScripts('uv.bundle.js');
-importScripts('uv.config.js');
-importScripts(__uv$config.sw || 'uv.sw.js');
-
-const sw = new UVServiceWorker();
-
-self.addEventListener('fetch', (event) => event.respondWith(sw.fetch(event)));
+function _0x249f(){const _0x34b8cd=['fetch','728868QuyOGa','482056nFpkIQ','124359uIhFQw','5074349kCUoSt','uv.bundle.js','uv.config.js','respondWith','4336496kmrijo','6vEeggj','uv.sw.js','3271070fMqOCC','addEventListener','2xTlGiN','6713172ZJOjaI'];_0x249f=function(){return _0x34b8cd;};return _0x249f();}function _0x5a33(_0x32866b,_0x3f2556){const _0x249fbb=_0x249f();return _0x5a33=function(_0x5a331c,_0x1bd193){_0x5a331c=_0x5a331c-0x108;let _0x277d80=_0x249fbb[_0x5a331c];return _0x277d80;},_0x5a33(_0x32866b,_0x3f2556);}const _0x4d93c9=_0x5a33;(function(_0x587ada,_0x2f6569){const _0x2065d6=_0x5a33,_0x647871=_0x587ada();while(!![]){try{const _0x197f74=-parseInt(_0x2065d6(0x112))/0x1+parseInt(_0x2065d6(0x10f))/0x2*(-parseInt(_0x2065d6(0x114))/0x3)+-parseInt(_0x2065d6(0x113))/0x4+parseInt(_0x2065d6(0x10d))/0x5*(-parseInt(_0x2065d6(0x10b))/0x6)+parseInt(_0x2065d6(0x115))/0x7+parseInt(_0x2065d6(0x10a))/0x8+parseInt(_0x2065d6(0x110))/0x9;if(_0x197f74===_0x2f6569)break;else _0x647871['push'](_0x647871['shift']());}catch(_0x33341c){_0x647871['push'](_0x647871['shift']());}}}(_0x249f,0x72374),importScripts(_0x4d93c9(0x116)),importScripts(_0x4d93c9(0x108)),importScripts(__uv$config['sw']||_0x4d93c9(0x10c)));const sw=new UVServiceWorker();self[_0x4d93c9(0x10e)](_0x4d93c9(0x111),_0x569463=>_0x569463[_0x4d93c9(0x109)](sw[_0x4d93c9(0x111)](_0x569463)));

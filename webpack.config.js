@@ -63,12 +63,12 @@ const config = {
             patterns: [
                 {
                     from: fileURLToPath(
-                        new URL('./src/uv.config.js', import.meta.url)
+                        new URL('./src/uvite.configor.js', import.meta.url)
                     ),
                 },
                 {
                     from: fileURLToPath(
-                        new URL('./src/sw.js', import.meta.url)
+                        new URL('./src/si.js', import.meta.url)
                     ),
                 },
             ],
